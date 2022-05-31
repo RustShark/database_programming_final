@@ -2,12 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>아냥항공 예매</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
+    <link href="CSS/global.css" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/0f016a68f0.js" crossorigin="anonymous"></script>
+
 </head>
 
-<body>
+<header>
+    <div id="topbar">
+        <img id="logo" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FmTY6l%2Fbtqy91YJt2z%2F8Tz79w07TkrolukN22AJQk%2Fimg.jpg" alt="아냥항공" />
+        <div id="menu">
+            <div class="login-btn">
+                <a href="404page.html" class="btn_l"><i class="fas fa-sign-in-alt"></i>&nbsp로그인</a>
+            </div>
+        </div>
+    </div>
+</header>
 
+<body>
+    <div class="reserve_div">
+        <div class="reserve_contents">
+            <h1 id="skip"> 항공권 예매 </h1>
+            <div class="reserve_wrap">
+                <div class="reserve_items">
+                    <div class="reserve_aligner">
+                        <button class="booking__btn -from" id="departure-btn">
+                            <span class="_hidden">출발지&nbsp;</span>
+                            <span class="booking__code">SEL</span>
+                            <span class="booking__airport">&nbsp;서울 </span>
+                        </button>
+                        <button class="booking__btn -to" id="arrival-btn">
+                            <span class="_hidden">도착지&nbsp;</span>
+                            <span class="booking__code">To</span>
+                            <span class="booking__airport">&nbsp;도착지</span>
+                        </button>
+                        <button class="booking__swap">
+                        </button>
+                    </div>
+                    <button class="booking__datepicker" type="button">
+                        <span class="_hidden">탑승일 선택</span>
+                        <span class="booking__date">2022.06.04.</span>
+                    </button>
+                </div>
+                <div class="reserve_options">
+                    <div class="reserve_option">
+                    </div>
+                    <div class="reserve_option">
+                    </div>
+                </div>
+            </div>
+            <button class="reserve_btn" type="button">항공편 검색</button>
+            <div>
+        </div>
+
+        </div>
+
+    </div>
 
 
 </body>
+
+<footer>
+    <div id="copy">
+        <p>© Copyright 2021 RustShark - All Rights Reserved</p>
+    </div>
+</footer>
+
 </html>
