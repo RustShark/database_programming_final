@@ -1,11 +1,19 @@
 * {
     font-family: 'Nanum Gothic', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 body{
-    margin: 0px;
     padding-top: 75px;
     background-color: #f6f5f5;
+
+    overflow-y: scroll;
+    margin: 0;
+    height: 100%;
+    line-height: 1.5;
+    word-break: break-word;
+    -webkit-text-size-adjust: none;
 }
 
 header {
@@ -14,6 +22,17 @@ header {
     left: 0;
     right: 0;
     z-index: 2;
+}
+
+#skip {
+    font-wight: 400px;
+    font-size: 2.2rem;
+    margin-bottom: 0.8rem;
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 #logo {
@@ -56,8 +75,8 @@ header {
     margin-top: 10px;
     width: 110px;
     height: 55px;
-    background: dodgerblue;
-    border-color: dodgerblue;
+    background: #00256c;
+    border-color: #00256c;
     border-style: solid;
     border-width: 3px;
     border-radius: 10px;
@@ -82,10 +101,10 @@ header {
     background: #fff;
 }
 .login-btn:hover > a i{
-    color: dodgerblue;
+    color: #00256c;
 }
 .login-btn:hover > a{
-    color: dodgerblue;
+    color: #00256c;
 }
 .login-done{
     width: 100px;
@@ -98,7 +117,7 @@ header {
     right: 6%;
 }
 .login-done p{
-    color: dodgerblue;
+    color: #00256c;
 }
 
 /* main logo */
@@ -230,4 +249,385 @@ a.control_next {
     text-align: center;
     padding: 30px 0px;
     font-family: 'Poppins', sans-serif;
+}
+
+/*
+reservation
+*/
+
+.reserve_div {
+    box-sizing: border-box;
+    padding: 0 2rem;
+}
+
+.reserve_contents {
+    max-width: 128rem;
+    padding: 6rem 0 10rem;
+}
+
+.reserve_wrap {
+    position: relative;
+    background-color: #fff;
+    margin-top: 0.2rem;
+    margin-bottom: 2.4rem;
+    padding: 0 34% 1rem 0;
+    border-top: 0.4rem solid #c7f3ff;
+    border-radius: 0 0 0.4rem 0.4rem;
+    box-shadow: 0.2rem 1.6rem 2rem 0 rgb(35 55 94 / 14%);
+    box-sizing: border-box;
+}
+
+.reserve_wrap:before {
+    width: 34.1500%;
+    content: "";
+    display: block;
+    position: absolute;
+    top: -0.4rem;
+    right: 0;
+    height: 0.4rem;
+    background: 0 0/20px 4px no-repeat #00256c;
+}
+
+.reserve_items {
+    display: block;
+    position: relative;
+    padding: 4rem 0 2.9rem;
+    border-top: 1px solid #d9dbe1;
+}
+
+.reserve_aligner {
+    padding-bottom: 0.9rem;
+    overflow: hidden;
+}
+
+.reserve_aligner:after {
+    content: "";
+    display: block;
+    clear: both;
+    box-sizing: border-box;
+}
+
+.reserve_aligner:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 6.2rem;
+    bottom: 0;
+    left: 9.4rem;
+    right: 9.4rem;
+    height: 0.2rem;
+    background: 0 0;
+    z-index: 1;
+}
+
+
+.reserve_options {
+    position: absolute;
+    top: 1rem;
+    bottom: 0;
+    width: 34%;
+    right: 0;
+    padding: 1.6rem 4.4rem 2.2rem;
+    border-top: 0;
+    border-left: 1px dashed #d9dbe1;
+    box-sizing: border-box;
+}
+
+.reserve_option {
+    box-sizing: border-box;
+}
+
+.reserve_option + .reserve_option{
+    margin-top: 2.8rem;
+}
+
+.reserve_btn {
+    display: block;
+    width: auto;
+    min-width: 34rem;
+    margin: 6rem auto 0;
+    height: 5.4rem;
+    line-height: 1.56;
+    padding: 1.5rem 2rem;
+    border: 1px solid #00256c;
+    border-radius: 0.2rem;
+    background-color: #00256c;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.6rem;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.booking__btn{
+    width: 12rem;
+    display: block;
+    border: 0;
+    background: #FFF;
+    cursor: pointer;
+}
+
+.-from {
+    float: left;
+}
+.-to {
+    float: right;
+}
+
+.booking__code {
+    display: inline-block;
+    width: 100%;
+    font-size: 2.8rem;
+    font-weight: 700;
+    font-style: normal;
+    color: #000;
+    box-sizing: border-box;
+}
+
+.booking__airport {
+    display: block;
+    margin-left: -0.4rem;
+    color: #555;
+    font-size: 1.2rem;
+    line-height: 1.58;
+    box-sizing: border-box;
+}
+
+.to:before {
+    top: 6.6rem;
+    left: 18.8rem;
+    right: 18.8rem;
+    border-color: #5497e9;
+    content: "";
+    display: block;
+    position: absolute;
+    border-top: 1px dashed #0064de;
+}
+
+.booking__swap {
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 100%;
+    display: inline-block;
+    position: absolute;
+    top: 3.4rem;
+    left: 50%;
+    width: 5.6rem;
+    height: 5.6rem;
+    margin-left: -2.8rem;
+    border: 0;
+    background: url(https://www.koreanair.com/booking__swap.svg) 50% 50%/44px 44px no-repeat #fff;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.booking__datepicker {
+    display: block;
+    width: 100%;
+    padding: 1.1rem 0;
+    border: 0;
+    background: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.booking__date {
+    display: inline-block;
+    padding-left: 2.0rem;
+    background: url(https://www.koreanair.com/booking__date.svg) 0 50%/24px 24px no-repeat;
+    color: #000;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.58;
+    white-space: nowrap;
+}
+
+._hidden {
+    overflow: hidden;
+    white-space: nowrap;
+    clip: rect(1px,1px,1px,1px);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+
+
+
+.dialog .-active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dialog {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    z-index: 9999;
+}
+
+.dialog .-full .dialog__contents {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%!important;
+}
+
+.dialog__contents {
+    display: inline-block;
+    overflow-y: auto;
+    position: relative;
+    padding: 2rem 2rem 0;
+    outline: 0;
+    background-color: #fff;
+}
+
+.dialog__close {
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+    position: absolute;
+    top: 1.2rem;
+    right: 1rem;
+    width: 4.4rem;
+    height: 4.4rem;
+    border: 0;
+    border-radius: 0.2rem;
+    background: url(https://www.koreanair.com/dialog__close.svg) 50% 50%/24px 24px no-repeat;
+    text-indent: 100%;
+    cursor: pointer;
+}
+
+.dialog__aligner {
+    margin: 3rem 0 0;
+    padding-bottom: 2.4rem;
+}
+
+.combobox {
+    position: relative;
+    margin: 1.6rem 0 4rem;
+}
+
+.auto-search .placeholder {
+    top: 1.6rem;
+}
+
+.placeholder {
+    position: absolute;
+    top: 0.8rem;
+    width: 100%;
+    color: #767676;
+    font-size: 1.6rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    -ms-user-select: none;
+}
+
+.auto-search__text {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    width: 100%;
+    height: 5.3rem;
+    margin: 0;
+    padding: 0 9rem 1px 0;
+    border: 2px solid #fff;
+    border-bottom: 1px solid #00256c;
+    border-radius: 0;
+    background: 0 0;
+    color: #000;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    transition: padding .2s,border .2s,color .2s;
+}
+
+.auto-search__clear {
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 100%;
+    display: none;
+    position: absolute;
+    top: 0.4rem;
+    right: 0.2rem;
+    width: 4.4rem;
+    height: 4.4rem;
+    border: 0;
+    background: url(https://www.koreanair.com/search__clear.svg) 50% 50%/24px 24px no-repeat #fff;
+    vertical-align: top;
+    transition: right .2s;
+}
+
+.combobox__list {
+    overflow-y: auto;
+    display: none;
+    position: absolute;
+    top: 5.3rem;
+    left: 0;
+    width: 100%;
+    max-height: 23.8rem;
+    margin: 0;
+    padding: 0;
+    border-left: 1px solid #d9dbe1;
+    border-right: 1px solid #d9dbe1;
+    border-bottom: 1px solid #d9dbe1;
+    background-color: #fff;
+    box-shadow: 0 0.4rem 1.2rem 0 rgb(0 25 72 / 22%);
+    list-style: none;
+}
+
+.combobox__item {
+    display: flex;
+    padding: 1.5rem 1.6rem 1.5rem 2rem;
+    border-bottom: 1px solid #d9dbe1;
+    color: #000;
+    font-size: 1.4rem;
+    line-height: 1.58;
+}
+
+.combobox__item .-indent {
+    padding-left: 4.4rem;
+}
+
+.combobox__code {
+    display: block;
+    flex-shrink: 0;
+    min-width: 6.4rem;
+    padding-left: 2.4rem;
+    background: url(https://www.koreanair.com/combobox__code--airport.svg) 0 0.5rem/16px 16px no-repeat;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.combobox__code.-city {
+    background: url(https://www.koreanair.com/combobox__code--city.svg) 0 0.2rem/16px 16px no-repeat;
+}
+
+.combobox__airport {
+    display: block;
+    flex: 1;
+    padding-left: 4px;
+}
+
+.combobox__highlight {
+    background: none;
+    color: #0064de;
+    font-weight: 700;
 }

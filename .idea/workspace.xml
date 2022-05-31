@@ -10,11 +10,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91a0be24-b42f-4da3-8f4d-aa1a44c31a2a" name="Default Changelist" comment="base">
-      <change afterPath="$PROJECT_DIR$/reservation.html" afterDir="false" />
+    <list default="true" id="91a0be24-b42f-4da3-8f4d-aa1a44c31a2a" name="Default Changelist" comment="start_0529">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSS/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reservation.html" beforeDir="false" afterPath="$PROJECT_DIR$/reservation.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSS/reservation_check_result.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/reservation_check_result.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSS/ticket.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/ticket.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/onlineTicket.html" beforeDir="false" afterPath="$PROJECT_DIR$/onlineTicket.php" afterDir="false" />
@@ -33,9 +32,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="JavaScript File" />
         <option value="HTML File" />
-        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -50,7 +49,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 8.1" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="29c5KrKG50vXMgAiedpJQg9RsXh" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -61,7 +60,11 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/php-8.1.6-Win32-vs16-x64/php.exe",
+    "settings.editor.selected.configurable": "reference.webide.settings.project.settings.php",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -106,6 +109,8 @@
       <workItem from="1653626861388" duration="1311000" />
       <workItem from="1653646800526" duration="376000" />
       <workItem from="1653647592371" duration="7116000" />
+      <workItem from="1653768848515" duration="248000" />
+      <workItem from="1653976959380" duration="1239000" />
     </task>
     <task id="LOCAL-00001" summary="base">
       <created>1653646506391</created>
@@ -114,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653646506391</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="start_0529">
+      <created>1653769024333</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1653769024333</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,7 +145,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="base" />
-    <option name="LAST_COMMIT_MESSAGE" value="base" />
+    <MESSAGE value="start_0529" />
+    <option name="LAST_COMMIT_MESSAGE" value="start_0529" />
+  </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
