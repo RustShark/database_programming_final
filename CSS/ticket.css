@@ -1,0 +1,38 @@
+.ticketing {
+    width: 1000px;
+    margin: 100px auto auto auto;
+    font-size: 25px;
+}
+.onlineTicket {
+    width: 500px;
+    margin: 200px auto auto auto;
+    text-align: center;
+    font-size: 17px;
+}
+
+.button{
+    width: 200px;
+    height: 70px;
+    background: #5D8BF4;
+    border-color: #5D8BF4;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: absolute;
+    color: white;
+    cursor: pointer;
+    transition: .3s linear;
+    text-align: center;
+    left: 42%;
+
+}
+
+#wrapper{
+    max-width: 1020px;
+    margin: 0 auto;
+
+}
