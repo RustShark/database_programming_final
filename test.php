@@ -17,7 +17,5 @@
     $query="SELECT * FROM dbo.Airport";
     $cntQuery="SELECT count(*) FROM dbo.Airport";
     $result=sqlsrv_query($conn, $query);
-    $cnt=sqlsrv_query($conn, $cntQuery);
-
 
 ?>

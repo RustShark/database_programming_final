@@ -16,3 +16,4 @@ arrivalPopup.addEventListener('click', e => {
 closePopup.addEventListener('click', e => {
     dialog.style.display = "none"
 })
+

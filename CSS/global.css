@@ -323,11 +323,12 @@ reservation
 
 .reserve_options {
     position: absolute;
+    text-align: center;
     top: 1rem;
     bottom: 0;
     width: 34%;
     right: 0;
-    padding: 1.6rem 4.4rem 2.2rem;
+    padding: 1.0rem 4.4rem 2.2rem;
     border-top: 0;
     border-left: 1px dashed #d9dbe1;
     box-sizing: border-box;
@@ -338,7 +339,31 @@ reservation
 }
 
 .reserve_option + .reserve_option{
-    margin-top: 2.8rem;
+    margin-top: 1.0rem;
+}
+
+.reserve_option > input {
+    width: 100%;
+    min-width: 3rem;
+    max-width: 10rem;
+    height: 1.3rem;
+    border: 0;
+    border-radius: 8px;
+    background-color: rgb(233, 233, 233);
+}
+
+.reserve_option > .reserve_submit {
+    width: 3rem;
+    height: 1.3rem;
+    border: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    background-color: rgb(233, 233, 233);
+}
+
+.reserve_option > .reserve_submit:hover {
+    color: #FFF;
+    background-color: #00256c;
 }
 
 .reserve_btn {
@@ -458,176 +483,4 @@ reservation
     margin: 0;
     padding: 0;
     border: 0;
-}
-
-
-
-
-
-.dialog .-active {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.dialog {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,.5);
-    z-index: 9999;
-}
-
-.dialog .-full .dialog__contents {
-    width: 100%;
-    max-width: 100%;
-    height: 100%;
-    max-height: 100%!important;
-}
-
-.dialog__contents {
-    display: inline-block;
-    overflow-y: auto;
-    position: relative;
-    padding: 2rem 2rem 0;
-    outline: 0;
-    background-color: #fff;
-}
-
-.dialog__close {
-    overflow: hidden;
-    white-space: nowrap;
-    display: block;
-    position: absolute;
-    top: 1.2rem;
-    right: 1rem;
-    width: 4.4rem;
-    height: 4.4rem;
-    border: 0;
-    border-radius: 0.2rem;
-    background: url(https://www.koreanair.com/dialog__close.svg) 50% 50%/24px 24px no-repeat;
-    text-indent: 100%;
-    cursor: pointer;
-}
-
-.dialog__aligner {
-    margin: 3rem 0 0;
-    padding-bottom: 2.4rem;
-}
-
-.combobox {
-    position: relative;
-    margin: 1.6rem 0 4rem;
-}
-
-.auto-search .placeholder {
-    top: 1.6rem;
-}
-
-.placeholder {
-    position: absolute;
-    top: 0.8rem;
-    width: 100%;
-    color: #767676;
-    font-size: 1.6rem;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-    -ms-user-select: none;
-}
-
-.auto-search__text {
-    box-sizing: border-box;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    display: block;
-    width: 100%;
-    height: 5.3rem;
-    margin: 0;
-    padding: 0 9rem 1px 0;
-    border: 2px solid #fff;
-    border-bottom: 1px solid #00256c;
-    border-radius: 0;
-    background: 0 0;
-    color: #000;
-    font-size: 1.6rem;
-    line-height: 1.5;
-    transition: padding .2s,border .2s,color .2s;
-}
-
-.auto-search__clear {
-    overflow: hidden;
-    white-space: nowrap;
-    text-indent: 100%;
-    display: none;
-    position: absolute;
-    top: 0.4rem;
-    right: 0.2rem;
-    width: 4.4rem;
-    height: 4.4rem;
-    border: 0;
-    background: url(https://www.koreanair.com/search__clear.svg) 50% 50%/24px 24px no-repeat #fff;
-    vertical-align: top;
-    transition: right .2s;
-}
-
-.combobox__list {
-    overflow-y: auto;
-    display: none;
-    position: absolute;
-    top: 5.3rem;
-    left: 0;
-    width: 100%;
-    max-height: 23.8rem;
-    margin: 0;
-    padding: 0;
-    border-left: 1px solid #d9dbe1;
-    border-right: 1px solid #d9dbe1;
-    border-bottom: 1px solid #d9dbe1;
-    background-color: #fff;
-    box-shadow: 0 0.4rem 1.2rem 0 rgb(0 25 72 / 22%);
-    list-style: none;
-}
-
-.combobox__item {
-    display: flex;
-    padding: 1.5rem 1.6rem 1.5rem 2rem;
-    border-bottom: 1px solid #d9dbe1;
-    color: #000;
-    font-size: 1.4rem;
-    line-height: 1.58;
-}
-
-.combobox__item .-indent {
-    padding-left: 4.4rem;
-}
-
-.combobox__code {
-    display: block;
-    flex-shrink: 0;
-    min-width: 6.4rem;
-    padding-left: 2.4rem;
-    background: url(https://www.koreanair.com/combobox__code--airport.svg) 0 0.5rem/16px 16px no-repeat;
-    font-weight: 700;
-    font-style: normal;
-}
-
-.combobox__code.-city {
-    background: url(https://www.koreanair.com/combobox__code--city.svg) 0 0.2rem/16px 16px no-repeat;
-}
-
-.combobox__airport {
-    display: block;
-    flex: 1;
-    padding-left: 4px;
-}
-
-.combobox__highlight {
-    background: none;
-    color: #0064de;
-    font-weight: 700;
 }
