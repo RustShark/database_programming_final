@@ -10,22 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91a0be24-b42f-4da3-8f4d-aa1a44c31a2a" name="Default Changelist" comment="0601 reservation page, ke_dialog prepare">
-      <change afterPath="$PROJECT_DIR$/CSS/datepicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSS/datepicker.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSS/reserve_choose.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JS/datepicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JS/datepicker.ko.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JS/datepicker.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JS/reservationP.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reservation_chosen.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reserve_choose.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/_dialogs.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/_dialogs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reservation.html" beforeDir="false" afterPath="$PROJECT_DIR$/reservation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
+    <list default="true" id="91a0be24-b42f-4da3-8f4d-aa1a44c31a2a" name="Default Changelist" comment="0601 reservation page to reservation_chosen page with schedule query">
+      <change beforePath="$PROJECT_DIR$/dialog_tmp.html" beforeDir="false" afterPath="$PROJECT_DIR$/temp/dialog_tmp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/test.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +86,7 @@
     <configuration name="reservation_chosen.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/reservation_chosen.php">
       <method v="2" />
     </configuration>
-    <configuration name="test.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/test.php">
+    <configuration name="test.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/temp/test.php">
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -130,7 +117,7 @@
       <workItem from="1654279133791" duration="1354000" />
       <workItem from="1654345027020" duration="2044000" />
       <workItem from="1654347255759" duration="18696000" />
-      <workItem from="1654416580014" duration="20072000" />
+      <workItem from="1654416580014" duration="20540000" />
     </task>
     <task id="LOCAL-00001" summary="base">
       <created>1653646506391</created>
@@ -153,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654022299151</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="0601 reservation page to reservation_chosen page with schedule query">
+      <created>1654450090196</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1654450090196</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,7 +168,8 @@
     <MESSAGE value="base" />
     <MESSAGE value="start_0529" />
     <MESSAGE value="0601 reservation page, ke_dialog prepare" />
-    <option name="LAST_COMMIT_MESSAGE" value="0601 reservation page, ke_dialog prepare" />
+    <MESSAGE value="0601 reservation page to reservation_chosen page with schedule query" />
+    <option name="LAST_COMMIT_MESSAGE" value="0601 reservation page to reservation_chosen page with schedule query" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
