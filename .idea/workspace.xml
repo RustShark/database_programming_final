@@ -32,6 +32,7 @@
       <change beforePath="$PROJECT_DIR$/reservation_check.html" beforeDir="false" afterPath="$PROJECT_DIR$/reservation_check.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reservation_check_result.php" beforeDir="false" afterPath="$PROJECT_DIR$/reservation_check_result.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ticketing.html" beforeDir="false" afterPath="$PROJECT_DIR$/ticketing.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialog_tmp.html" beforeDir="false" afterPath="$PROJECT_DIR$/temp/dialog_tmp.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +46,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -150,7 +151,7 @@
       <workItem from="1654279133791" duration="1354000" />
       <workItem from="1654345027020" duration="2044000" />
       <workItem from="1654347255759" duration="18696000" />
-      <workItem from="1654416580014" duration="20072000" />
+      <workItem from="1654416580014" duration="20540000" />
     </task>
     <task id="LOCAL-00001" summary="base">
       <created>1653646506391</created>
@@ -173,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654022299151</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="0601 reservation page to reservation_chosen page with schedule query">
+      <created>1654450090196</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1654450090196</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
