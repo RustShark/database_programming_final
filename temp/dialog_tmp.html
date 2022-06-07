@@ -1,0 +1,51 @@
+<div aria-hidden="false" aria-labelledby="dialog-airport-title" class="dialog -full -active" role="dialog" id="dialog-airport">
+    <div class="dialog__contents" role="document">
+        <h2 id="dialog-airport-title">출발지 검색</h2>
+        <div class="dialog__aligner">
+            <div class="search-airport">
+                <label class="_hidden">도시 및 공항 검색</label>
+                <div class="combobox" id="combobox">
+                    <div class="auto-search">
+                        <span class="placeholder" id="placeholder-search" style="display: block;">도시, 공항</span>
+                        <input id="placeholder-search-input" aria-autocomplete="list" aria-haspopup="true" class="auto-search__text" role="combobox" type="text" aria-invalid="false" aria-expanded="false" aria-owns="combobox-list">
+                        <button class="auto-search__clear" type="button" style="display: block;">
+                            <span class="_hidden">전체 삭제</span>
+                        </button>
+                        <div id="autoCompleteResult" aria-live="polite" class="_hidden" role="status"></div>
+                    </div>
+                    <div class="combobox__listbox">
+                        <ul id="combobox-list _pc-hidden" role="listbox" class="combobox__list" aria-label="도시 또는 공항 선택" style="display: block;">
+                            <li role="option" class="combobox__item auto-complete-item" aria-selected="false" id="item0">
+                                <em class="combobox__code -city">SEL&nbsp;</em>
+                                <span class="combobox__airport">
+                                        <mark class="combobox__highlight">서울</mark>
+                                        "/모든 공항, 대한민국"
+                                    </span>
+                                <span class="_hidden">도시</span>
+                            </li>
+                            <li role="option" class="combobox__item auto-complete-item -indent" aria-selected="false" id="item1">
+                                <em class="combobox__code -city">GMP&nbsp;</em>
+                                <span class="combobox__airport">
+                                        <mark class="combobox__highlight">서울</mark>
+                                        "/김포, 대한민국"
+                                    </span>
+                                <span class="_hidden">도시</span>
+                            </li>
+                            <li role="option" class="combobox__item auto-complete-item -indent" aria-selected="false" id="item2">
+                                <em class="combobox__code -city">ICN&nbsp;</em>
+                                <span class="combobox__airport">
+                                        <mark class="combobox__highlight">서울</mark>
+                                        "/인천, 대한민국"
+                                    </span>
+                                <span class="_hidden">도시</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="dialog__close" type="button">닫기</button>
+    </div>
+</div>
+
+<script type="text/javascript" src="../JS/_dialogs.js"></script>

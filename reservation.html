@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아냥항공 예매</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
+    <link href="CSS/global.css" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/0f016a68f0.js" crossorigin="anonymous"></script>
+
+
+    <link href="./CSS/datepicker.min.css" rel="stylesheet" type="text/css" media="all">
+    <!-- Air datepicker css -->
+    <script src="./JS/datepicker.js"></script> <!-- Air datepicker js -->
+    <script src="./JS/datepicker.ko.js"></script> <!-- 달력 한글 추가를 위해 커스텀 -->
+</head>
+
+<header>
+    <div id="topbar">
+        <img id="logo" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FmTY6l%2Fbtqy91YJt2z%2F8Tz79w07TkrolukN22AJQk%2Fimg.jpg" alt="아냥항공" />
+        <div id="menu">
+            <div class="login-btn">
+                <a href="404page.html" class="btn_l"><i class="fas fa-sign-in-alt"></i>&nbsp로그인</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<body>
+    <div class="reserve_div">
+        <div class="reserve_contents">
+            <h1 id="skip"> 항공권 예매 </h1>
+            <form method="post" action="reservation_chosen.php">
+                <div class="reserve_wrap">
+                    <div class="reserve_items">
+                        <div class="reserve_aligner">
+                            <button class="booking__btn -from" id="departure-btn" type="button">
+                                <input id="hid_board" type="hidden" name="board" value="출발지" class="_hidden">
+                                <span id="ip_boarding_id" class="booking__code">SEL</span>
+                                <span id="ip_boarding_name" class="booking__airport">&nbsp;Seoul </span>
+                            </button>
+                            <button class="booking__btn -to" id="arrival-btn" type="button">
+                                <input id="hid_arrive" type="hidden" name="arrive" value="도착지" class="_hidden">
+                                <span id="ip_arriving_id" class="booking__code">To</span>
+                                <span id="ip_arriving_name" class="booking__airport">&nbsp;Arrive </span>
+                            </button>
+                            <button id="swap_btn" class="booking__swap" type="button">
+                            </button>
+                        </div>
+                        <button class="booking__datepicker" type="button">
+                            <span class="_hidden">탑승일 선택</span>
+                            <input type="text" name="date" id="book_datepicker" class="booking__date">
+                            <script>
+                                $(".booking__date").datepicker({
+                                    language: 'ko'
+                                });
+                            </script>
+                        </button>
+                    </div>
+                    <div class="reserve_options">
+                        <div class="reserve_option">
+                            <label>출발지</label>
+                            </br>
+                            <input id="label_boarding" type="text">
+                            <input id="label_boarding_submit" class="reserve_submit" value="선택" onclick="input_board()">
+                        </div>
+                        <div class="reserve_option">
+                            <label>도착지</label>
+                            </br>
+                            <input id="label_arriving" name="arriving" type="text">
+                            <input id="label_arriving_submit" class="reserve_submit" value="선택" onclick="input_arrive()">
+                        </div>
+                        <div class="reserve_option">
+                            <label>승객수</label>
+                            </br>
+                            <input id="label_count" type="text" name="count">
+                        </div>
+                        <div class="reserve_option">
+                            <label>좌석 등급</label>
+                            </br>
+                            <input id="label_level" name="level" type="text">
+                        </div>
+                    </div>
+                </div>
+                <button class="reserve_btn" type="submit">항공편 검색</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <div id="copy">
+        <p>© Copyright 2021 RustShark - All Rights Reserved</p>
+    </div>
+</footer>
+<script src="JS/reservationP.js"></script>
+
+</html>
