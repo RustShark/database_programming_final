@@ -89,16 +89,12 @@ header {
     right: 3%;
     cursor: pointer;
     transition: .3s linear;
-}
-.login-btn a i{
-    color: white;
-}
-.login-btn a{
-    color: white;
+    color: #FFF;
 }
 
 .login-btn:hover{
     background: #fff;
+    color: #00256c;
 }
 .login-btn:hover > a i{
     color: #00256c;
@@ -221,7 +217,7 @@ a.control_next {
 
 .card {
     width: 25%;
-    padding: 112px 48px;
+    padding: 115px 52px;
     text-align: center;
     color: white;
     box-sizing: border-box;
@@ -231,13 +227,9 @@ a.control_next {
     transform: scale(1.5);
 }
 
-.card:hover .icon2 {
-    transform: scale(1.2);
-}
-
-
 .icon1{
     font-size: 80px;
+    padding-bottom: 1.2rem;
     transition: transform 300ms;
 }
 

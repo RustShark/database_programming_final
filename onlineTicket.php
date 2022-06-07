@@ -17,12 +17,12 @@
 
 <header>
     <div id="topbar">
-        <a href="main.html">
+        <a href="main.php">
             <img id="logo" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FmTY6l%2Fbtqy91YJt2z%2F8Tz79w07TkrolukN22AJQk%2Fimg.jpg" alt="아냥항공" />
 
             <div id="menu">
                 <div class="login-btn">
-                    <a href="404page.html" class="btn_l"><i class="fas fa-sign-in-alt"></i>&nbsp로그인</a>
+                    <a href="404page.html" class="btn_l"><i class="fas fa-sign-in-alt"></i>&nbsp 환영합니다</a>
                 </div>
             </div>
     </div>
@@ -97,7 +97,7 @@ $row = sqlsrv_fetch_array($result);
             <span class="plane planeslip"><svg clip-rule="evenodd" fill-rule="evenodd" height="50" width="50" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg"><g stroke="#222"><line fill="none" stroke-linecap="round" stroke-width="30" x1="300" x2="55" y1="390" y2="390"/><path d="M98 325c-9 10 10 16 25 6l311-156c24-17 35-25 42-50 2-15-46-11-78-7-15 1-34 10-42 16l-56 35 1-1-169-31c-14-3-24-5-37-1-10 5-18 10-27 18l122 72c4 3 5 7 1 9l-44 27-75-15c-10-2-18-4-28 0-8 4-14 9-20 15l74 63z" fill="#222" stroke-linejoin="round" stroke-width="10"/></g></svg></span>
             <span class="sfo sfoslip"><?php echo $row['arrivalName']?></span>
             <div class="sub-content">
-                <span class="watermark">Lufthansa</span>
+                <span class="watermark">DBPROJECT</span>
                 <span class="name">PASSENGER NAME<br><span><?php echo $row['passengerName']?></span></span>
                 <span class="flight">FLIGHT N&deg;<br><span><?php echo $row['flightName']?></span></span>
                 <span class="gate">GATE<br><span>11B</span></span>
@@ -113,26 +113,13 @@ $row = sqlsrv_fetch_array($result);
         <div class="barcode slip"></div>
     </div>
 </div>
-<div class = "onlineTicket">
-    <h1 class = "title">온라인 발권</h1>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <h4>입장할 때 제시해주세요.</h4>
-    <br>
+
+<div>
+    <h1 style="font-size: 50px; margin-top: 12rem; margin-left: 48rem">온라인 발권</h1>
+    <h4 style="margin-top: 3rem; font-size: 20px; margin-left: 50rem">입장할 때 제시해주세요.</h4>
+</div>
+
 
 </body>
+
 </html>

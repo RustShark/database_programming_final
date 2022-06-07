@@ -27,24 +27,21 @@
     $dateData = $_POST["date"];
     $personData = $_POST["count"];
     $LevelData = $_POST["level"];
-    $boardingTime = $dateData . ' 00:00:00';
-    $arrivalTime = '2022-07-02 00:00:00';
+    $boardingInputTime = $dateData . ' 00:00:00';
+    $arrivalInputTime = date('Y-m-d H:i:s', strtotime($boardingInputTime.'+1 days'));
 
     // SQL Server Extension Sample Code:
     $connectionInfo = array("UID" => "wagyu", "pwd" => "a123456789!", "Database" => "airline", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
     $serverName = "tcp:wagyu.database.windows.net,1433";
     $conn = sqlsrv_connect($serverName, $connectionInfo);
 
-    $query="SELECT s.scheduleNum as schedule, bn.airportName as boardingName, bn.countryName as boardingCName, an.airportName as arrivalName, an.countryName as arrivalCName, s.boardingTime as boardingTime, s.arrivalTime as arrivalTime FROM Schedule as s, Airport as bn, Airport as an WHERE s.boardingAirportNum = bn.airportNum AND s.arrivalAirportNUM = an.airportNum AND '" . $boardData . "' = bn.airportName AND '" . $arriveData . "' = an.airportName AND s.boardingTime >= '" . $boardingTime . "' AND s.arrivalTime <= '" . $arrivalTime . "'";
+    $query="SELECT s.scheduleNum as schedule, bn.airportName as boardingName, bn.countryName as boardingCName, an.airportName as arrivalName, an.countryName as arrivalCName, s.boardingTime as boardingTime, s.arrivalTime as arrivalTime FROM Schedule as s, Airport as bn, Airport as an WHERE s.boardingAirportNum = bn.airportNum AND s.arrivalAirportNUM = an.airportNum AND '" . $boardData . "' = bn.airportName AND '" . $arriveData . "' = an.airportName AND s.boardingTime >= '" . $boardingInputTime . "' AND s.arrivalTime <= '" . $arrivalInputTime . "'";
     //$query = "SELECT s.scheduleNum as schedule, bn.airportName as boardingName, bn.countryName as boardingCName, an.airportName as arrivalName, an.countryName as arrivalCName, s.boardingTime as boardingTime, s.arrivalTime as arrivalTime FROM Schedule as s, Airport as bn, Airport as an WHERE s.boardingAirportNum = bn.airportNum AND s.arrivalAirportNUM = an.airportNum AND 'ICN' = bn.airportName AND 'NRT' = an.airportName AND s.boardingTime >= '2022-06-07 00:00:00' AND s.arrivalTime <= '2022-06-08 00:00:00'";
     $params = array();
     $options = array("Scrollable" => SQLSRV_CURSOR_KEYSET );
     $result = sqlsrv_query($conn, $query, $params, $options);
 
     $cnt = sqlsrv_num_rows($result);
-
-    echo $cnt;
-    echo $boardingTime;
 ?>
 
 <header>
@@ -52,7 +49,7 @@
         <img id="logo" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FmTY6l%2Fbtqy91YJt2z%2F8Tz79w07TkrolukN22AJQk%2Fimg.jpg" alt="아냥항공" />
         <div id="menu">
             <div class="login-btn">
-                <a href="404page.html" class="btn_l"><i class="fas fa-sign-in-alt"></i>&nbsp로그인</a>
+                <a href="404page.html" class="btn_l"><i class="fas fa-sign-in-alt"></i>&nbsp 환영합니다</a>
             </div>
         </div>
     </div>
@@ -63,7 +60,6 @@
     <div class="tpd-plan">
         <div class="tp-flight-plan">
             <div class="container-fluid">
-
                 <!-- 편도, 왕복 -->
                 <div id="node" class="crop depart" style="display: none">
                     <div class="context collapsed" data-toggle="collapse" data-target="#demo2">
@@ -72,6 +68,9 @@
                             <i class="fa fa-chevron-down"></i>
                         </a>
                         <div class="item it-1">
+                            <form action="reservation_receipt.php" name="scheduleForm" id="scheduleForm" method="post">
+                                <input type="text" class="_hidden" style="display: none" name="schedule_num" id="schedule_num" value="48452111">
+                            </form>
                             <label class="trip-type depart">Departure</label>
                             <div class="route-dot">
                             </div>
@@ -130,7 +129,6 @@
                                         <div id="arrival_name_label" class="tar-label">NRT Tokyo</div>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
 
@@ -139,7 +137,6 @@
                                 <strong>Arrives:</strong>
                                 2022 06 07 화
                             </span>
-
                             <span id="kr_last_Time" class="sub-span duration-info">
                                 <strong>Journey duration:</strong>
                                 1시간 32분
@@ -147,54 +144,73 @@
                         </div>
                     </div>
                 </div>
-                <div id="target">
-
-                </div>
+                <div id="target"></div>
                 <!-- -->
                 <script>
                     var node = document.getElementById('node');
                     var target = document.getElementById('target');
 
-                    const cnt = '<?php echo $cnt ?>';
+                    <?php
+                        while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC)) {
+                            echo ("var clone = node.cloneNode(true);");
+                            echo ("clone.style.display = 'block';");
 
-                    for(let i = 0; i < cnt; i++) {
-                        var clone = node.cloneNode(true);
-                        clone.style.display = 'block';
+                            $scheduleNum = $row['schedule'];
+                            $boardingName = $row['boardingName'];
+                            $arrivalName = $row['arrivalName'];
+                            $boardingCName = $row['boardingCName'];
+                            $arrivalCName = $row['arrivalCName'];
 
-                        <?php
-                        $row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC);
+                            $kr_Date = date_format($row['boardingTime'], 'Y m d D');
+                            $tmp1 = date_format($row['boardingTime'], 'H:i:s');
+                            $tmp2 = date_format($row['arrivalTime'], 'H:i:s');
+                            $kr_time = strtotime($tmp2) - strtotime($tmp1);
+                            $cut_B_time = date_format($row['boardingTime'], 'H:i');
+                            $cut_Atime = date_format($row['arrivalTime'], 'H:i');
 
-                        $boardingName = $row['boardingName'];
-                        $arrivalName = $row['arrivalName'];
-                        $boardingCName = $row['boardingCName'];
-                        $arrivalCName = $row['arrivalCName'];
-                        $boardingTime = $row['boardingTime'];
-                        $arrivalTime = $row['arrivalTime'];
+                            $hour = floor($kr_time/3600);
+                            $minute = $kr_time - ($hour * 3600);
+                            $minute = floor($minute/ 60);
+                            $kr_time = $hour . "시간 " . $minute . "분";
 
-                        $kr_Date = '2022 06 07 화요일';
-                        $kr_time = '1 시간 32 분';
-                        $cut_B_time = '01:12';
-                        $cut_Atime = '23:34';
-                        ?>
+                            echo("clone.querySelector('#schedule_num').value = '$scheduleNum';");
+                            echo("clone.querySelector('#kr_Airplane_time').innerHTML = '$kr_time';");
+                            echo("clone.querySelector('#air_boarding_Name').innerHTML = '$boardingName';");
+                            echo("clone.querySelector('#air_boarding_time').innerHTML = '$cut_B_time';");
+                            echo("clone.querySelector('#air_boarding_Name').innerHTML = '$boardingName';");
+                            echo("clone.querySelector('#air_boarding_CName').innerHTML = '$boardingCName';");
+                            echo("clone.querySelector('#air_arrival_time').innerHTML = '$cut_Atime';");
+                            echo("clone.querySelector('#air_arrival_Name').innerHTML = '$arrivalName';");
+                            echo("clone.querySelector('#air_arrival_CName').innerHTML = '$arrivalCName';");
+                            echo("clone.querySelector('#kr_Title_Date1').innerHTML = '$kr_Date';");
+                            echo("clone.querySelector('#kr_between_time').innerHTML = '$kr_time';");
+                            echo("clone.querySelector('#between_boarding_time').innerHTML = '$cut_B_time';");
+                            echo("clone.querySelector('#between_arrival_time').innerHTML = '$cut_Atime';");
+                            echo("clone.querySelector('#boarding_name_label').innerHTML = '$boardingName $boardingCName';");
+                            echo("clone.querySelector('#arrival_name_label').innerHTML = '$arrivalName $arrivalCName';");
+                            echo("clone.querySelector('#kr_Title_Date2').innerHTML = '$kr_Date';");
+                            echo("clone.querySelector('#kr_last_Time').innerHTML = '$kr_time';");
+                            echo("target.append(clone);");
+                        }
+                    ?>
 
-                        clone.querySelector('#kr_Airplane_time').innerHTML = '<?php echo $kr_time ?>';
-                        clone.querySelector('#air_boarding_time').innerHTML = '<?php echo $cut_B_time ?>';
-                        clone.querySelector('#air_boarding_Name').innerHTML = '<?php echo $boardingName ?>';
-                        clone.querySelector('#air_boarding_CName').innerHTML = '<?php echo $boardingCName ?>';
-                        clone.querySelector('#air_arrival_time').innerHTML = '<?php echo $cut_Atime ?>';
-                        clone.querySelector('#air_arrival_Name').innerHTML = '<?php echo $arrivalName ?>';
-                        clone.querySelector('#air_arrival_CName').innerHTML = '<?php echo $arrivalCName ?>';
-                        clone.querySelector('#kr_Title_Date1').innerHTML = '<?php echo $kr_Date ?>';
-                        clone.querySelector('#kr_between_time').innerHTML = '<?php echo $kr_time ?>';
-                        clone.querySelector('#between_boarding_time').innerHTML = '<?php echo $cut_B_time ?>';
-                        clone.querySelector('#between_arrival_time').innerHTML = '<?php echo $cut_Atime ?>';
-                        clone.querySelector('#boarding_name_label').innerHTML = '<?php echo $boardingName . " " . $boardingCName ?>';
-                        clone.querySelector('#arrival_name_label').innerHTML = '<?php echo $arrivalName . " " . $arrivalCName ?>';
-                        clone.querySelector('#kr_Title_Date2').innerHTML = '<?php echo $kr_Date ?>';
-                        clone.querySelector('#kr_last_Time').innerHTML = '<?php echo $kr_time ?>';
-                        target.append(clone);
-                    }
-
+                    target.addEventListener('click', function(event){
+                        let pay = confirm("결제하시겠습니까?\n\n확인 시 결제페이지로 이동합니다.");
+                        if(pay) {
+                            var data = {
+                                "boardingTime" : target.querySelector('#kr_Title_Date1').innerHTML,
+                                "arrivalTime" : target.querySelector('#air_arrival_time').innerHTML,
+                                "boardingName" : target.querySelector('#air_boarding_Name').innerHTML,
+                                "boardingCName" : target.querySelector('#air_boarding_CName').innerHTML,
+                                "arrivalName" : target.querySelector('#air_arrival_Name').innerHTML,
+                                "arrivalCName" : target.querySelector('#air_arrival_CName').innerHTML,
+                                "personData" : "<?php echo $personData; ?>",
+                                "LevelData" : "<?php echo $LevelData; ?>"
+                            };
+                            localStorage.setItem(("data"), JSON.stringify(data));
+                            document.getElementById('scheduleForm').submit();
+                        }
+                    });
                 </script>
             </div>
         </div>

@@ -15,11 +15,11 @@
 
 <header>
   <div id="topbar">
-    <a href="main.html">
+    <a href="main.php">
     <img id="logo" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FmTY6l%2Fbtqy91YJt2z%2F8Tz79w07TkrolukN22AJQk%2Fimg.jpg" alt="아냥항공" />
       <div id="menu">
         <div class="login-btn">
-          <a href="404page.html" class="btn_l"><i class="fas fa-sign-in-alt"></i>&nbsp로그인</a>
+          <a href="404page.html" class="btn_l"><i class="fas fa-sign-in-alt"></i>&nbsp 환영합니다</a>
         </div>
       </div>
     </a>
@@ -31,14 +31,14 @@
 <div id = "wrapper">
   <div class = "ticketing">
     <h1 class = "title">발권</h1>
-    <h6>각 항목을 적어주세요.</h6>
-    <hr>
+    <h6 style="margin: 0.6rem 0rem 0rem 0rem">각 항목을 적어주세요.</h6>
+    <hr style="margin: 1.5rem 0rem 0rem 0rem">
     <form id="contact" action="onlineTicket.php" method="post">
-    <p class = "reservationNum">예약 번호 : <input type="text" name="reservationNum" style="width:500px; height: 40px; font-size: 25px;" placeholder="예) 123ABCD 또는 1234567"/></p>
-    <p class = "passengerName">승객 이름 : <input type="text" name = "passengerName" style="width:500px; height: 40px; font-size: 25px;"/></p>
-    <hr>
-    <div class = "onticket"></div>
-    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">발권하기</button>
+      <p class = "reservationNum">예약 번호 : <input type="text" name="reservationNum" style="width:500px; height: 40px; font-size: 25px;" placeholder="예) 123ABCD 또는 1234567"/></p>
+      <p class = "passengerName">승객 이름 : <input type="text" name = "passengerName" style="width:500px; height: 40px; font-size: 25px;"/></p>
+      <hr>
+      <div class = "onticket"></div>
+      <button style="margin: 1.5rem 0rem 0rem 0rem" name="submit" type="submit" id="contact-submit" data-submit="...Sending">발권하기</button>
     </form>
 
   </div>

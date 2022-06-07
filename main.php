@@ -28,9 +28,20 @@
     <div id="topbar">
         <img id="logo" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FmTY6l%2Fbtqy91YJt2z%2F8Tz79w07TkrolukN22AJQk%2Fimg.jpg" alt="아냥항공" />
         <div id="menu">
-            <div class="login-btn">
-                <a href="404page.html" class="btn_l"><i class="fas fa-sign-in-alt"></i>&nbsp로그인</a>
-            </div>
+            <?php
+                $id = $_COOKIE['id'];
+                if(empty( $id )) {
+                    echo
+                    '<div class="login-btn">
+                        <a href="loginpage.php" class="btn_l"><i class="fas fa-sign-in-alt"></i>&nbsp로그인</a>
+                    </div>';
+                } else {
+                    echo
+                    '<div class="login-btn">
+                        <p> 환영합니다 </p>
+                     </div>';
+                }
+            ?>
         </div>
     </div>
 </header>
@@ -63,24 +74,23 @@
     <div class="card" style="background-color: #2D31FA;">
         <a href="reservation_check.html">
             <span><i class="fa-solid fa-plane-circle-check icon1"></i></span>
-            <h1>예약 조회</h1>
-        </a>
-    </div>
-
-    <div class="card" style="background-color: #5D8BF4;">
-        <a href="reservation_cancel.html">
-            <span><i class="fa-solid fa-plane-circle-xmark icon1"></i></span>
-            <h1>예약 취소</h1>
+            <h1>예매 조회</h1>
         </a>
     </div>
 
     <div class="card" style="background-color: #344CB7;">
-        <a href="airline_lotation.html">
-            <span><i class="fa-solid fa-plane-departure icon1"></i></span>
-            <h1>항공편 현황</h1>
+        <a href="reservation_cancel.php">
+            <span><i class="fa-solid fa-plane-circle-xmark icon1"></i></span>
+            <h1>예매 취소</h1>
         </a>
     </div>
 
+    <div class="card" style="background-color: #5D8BF4;">
+        <a href="ticketing.html">
+            <span><i class="fa-solid fa-ticket icon1"></i></span>
+            <h1>티켓 발권</h1>
+        </a>
+    </div>
 </div>
 
 </body>

@@ -10,29 +10,27 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91a0be24-b42f-4da3-8f4d-aa1a44c31a2a" name="Default Changelist" comment="0601 reservation page, ke_dialog prepare">
-      <change afterPath="$PROJECT_DIR$/CSS/datepicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSS/datepicker.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSS/reserve_choose.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JS/datepicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JS/datepicker.ko.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JS/datepicker.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JS/reservationP.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reservation_chosen.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reserve_choose.html" afterDir="false" />
+    <list default="true" id="83959875-f2f7-4ef3-bdd1-59601b8f5292" name="Changes" comment="0601 reservation page, ke_dialog prepare">
+      <change afterPath="$PROJECT_DIR$/CSS/login_style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CSS/reservation_receit.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loginpage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reservation_cancel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reservation_receipt.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/404page.html" beforeDir="false" afterPath="$PROJECT_DIR$/404page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSS/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/_dialogs.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/_dialogs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reservation.html" beforeDir="false" afterPath="$PROJECT_DIR$/reservation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/reservation_check_result.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/reservation_check_result.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/reservation_check.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/reservation_check.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSS/ticket.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/ticket.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/onlineTicket.html" beforeDir="false" afterPath="$PROJECT_DIR$/onlineTicket.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/test.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onlineTicket.php" beforeDir="false" afterPath="$PROJECT_DIR$/onlineTicket.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reservation.html" beforeDir="false" afterPath="$PROJECT_DIR$/reservation.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reservation_check.html" beforeDir="false" afterPath="$PROJECT_DIR$/reservation_check.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reservation_check_result.php" beforeDir="false" afterPath="$PROJECT_DIR$/reservation_check_result.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reservation_chosen.php" beforeDir="false" afterPath="$PROJECT_DIR$/reservation_chosen.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reserve_choose.html" beforeDir="false" afterPath="$PROJECT_DIR$/reserve_choose.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/test.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ticketing.html" beforeDir="false" afterPath="$PROJECT_DIR$/ticketing.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialog_tmp.html" beforeDir="false" afterPath="$PROJECT_DIR$/temp/dialog_tmp.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,14 +43,18 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="SCSS File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="Git.Merge.Settings">
     <option name="BRANCH" value="origin/master" />
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="origin/master" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -80,22 +82,24 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/php-8.1.6-Win32-vs16-x64/php.exe&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.webide.settings.project.settings.php&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "NewWatcherDialog.advanced.open": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/database_finalreport2",
+    "list.type.of.created.stylesheet": "CSS",
+    "settings.editor.selected.configurable": "watcher.settings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\database_programming_final\CSS" />
+      <recent name="D:\database_programming_final\JS" />
       <recent name="D:\database_programming_final" />
+      <recent name="D:\database_programming_final\CSS" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\database_programming_final\temp" />
@@ -104,22 +108,17 @@
       <recent name="D:\database_programming_final\CSS" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.reservation.html">
-    <configuration name="reservation.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/database_programming_final/reservation.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="reservation_chosen.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/reservation_chosen.php">
-      <method v="2" />
-    </configuration>
-  </component>
-  <component name="RunManager" selected="JavaScript Debug.reservation_check_result.php">
+  <component name="RunManager" selected="JavaScript Debug.reservation_chosen.php">
     <configuration name="reservation_check_result.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/database_programming_final/reservation_check_result.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="reservation_chosen.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/database_programming_final/reservation_chosen.php" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="reservation_check_result.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/reservation_check_result.php">
       <method v="2" />
     </configuration>
-    <configuration name="test.php (1)" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/JS/test.php">
+    <configuration name="test.php (1)" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/temp/test.php">
       <method v="2" />
     </configuration>
     <configuration name="test.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/test.php">
@@ -127,8 +126,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.reservation.html" />
-        <item itemvalue="PHP Script.reservation_chosen.php" />
+        <item itemvalue="JavaScript Debug.reservation_chosen.php" />
         <item itemvalue="PHP Script.reservation_check_result.php" />
         <item itemvalue="PHP Script.test.php (1)" />
         <item itemvalue="JavaScript Debug.reservation_check_result.php" />
@@ -205,7 +203,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="gyutae" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -217,7 +227,6 @@
     <MESSAGE value="0601 reservation page, ke_dialog prepare" />
     <MESSAGE value="0601 reservation page to reservation_chosen page with schedule query" />
     <MESSAGE value="move_trash" />
-    <option name="LAST_COMMIT_MESSAGE" value="move_trash" />
     <option name="LAST_COMMIT_MESSAGE" value="0601 reservation page, ke_dialog prepare" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
