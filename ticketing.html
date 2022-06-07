@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
+  <link href="CSS/global.css" rel="stylesheet">
+  <link href="CSS/ticket.css" rel="stylesheet">
+  <title>Ticketing</title>
+  <style>
+    body { background-color: white; }
+
+  </style>
+</head>
+
+<header>
+  <div id="topbar">
+    <a href="main.html">
+    <img id="logo" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FmTY6l%2Fbtqy91YJt2z%2F8Tz79w07TkrolukN22AJQk%2Fimg.jpg" alt="아냥항공" />
+      <div id="menu">
+        <div class="login-btn">
+          <a href="404page.html" class="btn_l"><i class="fas fa-sign-in-alt"></i>&nbsp로그인</a>
+        </div>
+      </div>
+    </a>
+  </div>
+  <hr>
+</header>
+
+<body>
+<div id = "wrapper">
+  <div class = "ticketing">
+    <h1 class = "title">발권</h1>
+    <h6>각 항목을 적어주세요.</h6>
+    <hr>
+    <form id="contact" action="onlineTicket.php" method="post">
+    <p class = "reservationNum">예약 번호 : <input type="text" name="reservationNum" style="width:500px; height: 40px; font-size: 25px;" placeholder="예) 123ABCD 또는 1234567"/></p>
+    <p class = "passengerName">승객 이름 : <input type="text" name = "passengerName" style="width:500px; height: 40px; font-size: 25px;"/></p>
+    <hr>
+    <div class = "onticket"></div>
+    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">발권하기</button>
+    </form>
+
+  </div>
+</div>
+</body>
+</html>

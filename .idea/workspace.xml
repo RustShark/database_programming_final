@@ -10,8 +10,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91a0be24-b42f-4da3-8f4d-aa1a44c31a2a" name="Default Changelist" comment="move_trash">
+    <list default="true" id="91a0be24-b42f-4da3-8f4d-aa1a44c31a2a" name="Default Changelist" comment="1. 예약 조회 - reservation_check.html, reservation_check.css&#10;&gt;&gt;완료&#10;2. 예약 조회 결과 - reservation_check_result.php, reservation_check_result.css&#10;&gt;&gt;sql, footer 추가해야 함.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/reservation_check_result.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/reservation_check_result.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/ticket.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/ticket.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onlineTicket.html" beforeDir="false" afterPath="$PROJECT_DIR$/onlineTicket.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reservation_check.html" beforeDir="false" afterPath="$PROJECT_DIR$/reservation_check.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reservation_check_result.php" beforeDir="false" afterPath="$PROJECT_DIR$/reservation_check_result.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticketing.html" beforeDir="false" afterPath="$PROJECT_DIR$/ticketing.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,9 +37,6 @@
       </list>
     </option>
   </component>
-  <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="origin/master" />
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -41,17 +45,10 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GithubProjectSettings">
-    <option name="branchProtectionPatterns">
-      <list>
-        <option value="Merge_needs_PR" />
-      </list>
-    </option>
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 8.1" />
   <component name="ProjectId" id="29c5KrKG50vXMgAiedpJQg9RsXh" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -66,6 +63,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/php-8.1.6-Win32-vs16-x64/php.exe&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Bitnami/wampstack-8.1.6-0/apache2/htdocs/database_programming_final&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.webide.settings.project.settings.php&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
@@ -97,6 +95,28 @@
       <list>
         <item itemvalue="JavaScript Debug.reservation.html" />
         <item itemvalue="PHP Script.reservation_chosen.php" />
+        <item itemvalue="PHP Script.test.php" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.reservation_check_result.php">
+    <configuration name="reservation_check_result.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/database_programming_final/reservation_check_result.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="reservation_check_result.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/reservation_check_result.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="test.php (1)" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/JS/test.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="test.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/test.php">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.reservation_check_result.php" />
+        <item itemvalue="PHP Script.test.php (1)" />
+        <item itemvalue="JavaScript Debug.reservation_check_result.php" />
         <item itemvalue="PHP Script.test.php" />
       </list>
     </recent_temporary>
@@ -160,6 +180,88 @@
       <updated>1654450217868</updated>
     </task>
     <option name="localTasksCounter" value="6" />
+=======
+      <workItem from="1653626861388" duration="819000" />
+      <workItem from="1653989285723" duration="10164000" />
+      <workItem from="1654004365768" duration="51000" />
+      <workItem from="1654004444510" duration="86000" />
+      <workItem from="1654004540557" duration="41000" />
+      <workItem from="1654004591317" duration="243000" />
+      <workItem from="1654004845512" duration="79000" />
+      <workItem from="1654004933781" duration="123000" />
+      <workItem from="1654005067454" duration="204000" />
+      <workItem from="1654005281689" duration="1456000" />
+      <workItem from="1654006759968" duration="316000" />
+      <workItem from="1654007087257" duration="570000" />
+      <workItem from="1654008043169" duration="1409000" />
+      <workItem from="1654009472864" duration="56000" />
+      <workItem from="1654009537669" duration="1093000" />
+      <workItem from="1654010903329" duration="544000" />
+      <workItem from="1654011459848" duration="30000" />
+      <workItem from="1654011501629" duration="35000" />
+      <workItem from="1654011547026" duration="685000" />
+      <workItem from="1654012246234" duration="56000" />
+      <workItem from="1654012312456" duration="25000" />
+      <workItem from="1654012345968" duration="267000" />
+      <workItem from="1654012623900" duration="214000" />
+      <workItem from="1654012847668" duration="1513000" />
+      <workItem from="1654014627160" duration="62000" />
+      <workItem from="1654014697819" duration="6328000" />
+      <workItem from="1654262500040" duration="2538000" />
+      <workItem from="1654344433028" duration="8603000" />
+      <workItem from="1654368474260" duration="50000" />
+      <workItem from="1654368532689" duration="1034000" />
+      <workItem from="1654369791941" duration="46000" />
+      <workItem from="1654369851898" duration="19000" />
+      <workItem from="1654369881677" duration="15000" />
+      <workItem from="1654369905917" duration="37000" />
+      <workItem from="1654369952917" duration="1193000" />
+      <workItem from="1654407783247" duration="903000" />
+      <workItem from="1654408703007" duration="118000" />
+      <workItem from="1654408842621" duration="365000" />
+      <workItem from="1654409220976" duration="188000" />
+      <workItem from="1654409420422" duration="31000" />
+      <workItem from="1654409461870" duration="52000" />
+      <workItem from="1654409521900" duration="33000" />
+      <workItem from="1654409563268" duration="149000" />
+      <workItem from="1654409722636" duration="32000" />
+      <workItem from="1654409762883" duration="136000" />
+      <workItem from="1654409907991" duration="720000" />
+      <workItem from="1654412891135" duration="146000" />
+      <workItem from="1654413047886" duration="514000" />
+      <workItem from="1654413574828" duration="40000" />
+      <workItem from="1654413623294" duration="72000" />
+      <workItem from="1654413703917" duration="133000" />
+      <workItem from="1654413848212" duration="2441000" />
+      <workItem from="1654416318914" duration="557000" />
+      <workItem from="1654416889567" duration="157000" />
+      <workItem from="1654417056346" duration="326000" />
+      <workItem from="1654417394230" duration="219000" />
+      <workItem from="1654417623328" duration="332000" />
+      <workItem from="1654417967737" duration="22000" />
+      <workItem from="1654417998721" duration="64000" />
+      <workItem from="1654418072982" duration="23000" />
+      <workItem from="1654418105074" duration="42000" />
+      <workItem from="1654418157223" duration="360000" />
+      <workItem from="1654418529634" duration="69000" />
+      <workItem from="1654418608119" duration="94000" />
+      <workItem from="1654418711904" duration="1272000" />
+      <workItem from="1654420149926" duration="115000" />
+      <workItem from="1654420274855" duration="36000" />
+      <workItem from="1654420319609" duration="842000" />
+      <workItem from="1654421177262" duration="2149000" />
+      <workItem from="1654429097581" duration="180000" />
+      <workItem from="1654429294392" duration="225000" />
+      <workItem from="1654429533786" duration="11714000" />
+    </task>
+    <task id="LOCAL-00001" summary="1. 예약 조회 - reservation_check.html, reservation_check.css&#10;&gt;&gt;완료&#10;2. 예약 조회 결과 - reservation_check_result.php, reservation_check_result.css&#10;&gt;&gt;sql, footer 추가해야 함.">
+      <created>1654023560459</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1654023560459</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,6 +285,9 @@
     <MESSAGE value="0601 reservation page to reservation_chosen page with schedule query" />
     <MESSAGE value="move_trash" />
     <option name="LAST_COMMIT_MESSAGE" value="move_trash" />
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1. 예약 조회 - reservation_check.html, reservation_check.css&#10;&gt;&gt;완료&#10;2. 예약 조회 결과 - reservation_check_result.php, reservation_check_result.css&#10;&gt;&gt;sql, footer 추가해야 함." />
+    <option name="LAST_COMMIT_MESSAGE" value="1. 예약 조회 - reservation_check.html, reservation_check.css&#10;&gt;&gt;완료&#10;2. 예약 조회 결과 - reservation_check_result.php, reservation_check_result.css&#10;&gt;&gt;sql, footer 추가해야 함." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
