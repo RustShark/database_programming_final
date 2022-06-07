@@ -10,9 +10,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91a0be24-b42f-4da3-8f4d-aa1a44c31a2a" name="Default Changelist" comment="0601 reservation page to reservation_chosen page with schedule query">
-      <change beforePath="$PROJECT_DIR$/dialog_tmp.html" beforeDir="false" afterPath="$PROJECT_DIR$/temp/dialog_tmp.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/test.php" afterDir="false" />
+    <list default="true" id="91a0be24-b42f-4da3-8f4d-aa1a44c31a2a" name="Default Changelist" comment="move_trash">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +29,9 @@
         <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/master" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -75,6 +77,8 @@
       <recent name="D:\database_programming_final" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\database_programming_final\temp" />
+      <recent name="D:\database_programming_final" />
       <recent name="D:\database_programming_final\JS" />
       <recent name="D:\database_programming_final\CSS" />
     </key>
@@ -117,7 +121,8 @@
       <workItem from="1654279133791" duration="1354000" />
       <workItem from="1654345027020" duration="2044000" />
       <workItem from="1654347255759" duration="18696000" />
-      <workItem from="1654416580014" duration="20540000" />
+      <workItem from="1654416580014" duration="20576000" />
+      <workItem from="1654588291743" duration="1368000" />
     </task>
     <task id="LOCAL-00001" summary="base">
       <created>1653646506391</created>
@@ -147,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654450090196</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="move_trash">
+      <created>1654450217868</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1654450217868</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,7 +181,8 @@
     <MESSAGE value="start_0529" />
     <MESSAGE value="0601 reservation page, ke_dialog prepare" />
     <MESSAGE value="0601 reservation page to reservation_chosen page with schedule query" />
-    <option name="LAST_COMMIT_MESSAGE" value="0601 reservation page to reservation_chosen page with schedule query" />
+    <MESSAGE value="move_trash" />
+    <option name="LAST_COMMIT_MESSAGE" value="move_trash" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
