@@ -51,6 +51,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/master" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -95,6 +98,8 @@
       <recent name="D:\database_programming_final" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\database_programming_final\temp" />
+      <recent name="D:\database_programming_final" />
       <recent name="D:\database_programming_final\JS" />
       <recent name="D:\database_programming_final\CSS" />
     </key>
@@ -151,7 +156,8 @@
       <workItem from="1654279133791" duration="1354000" />
       <workItem from="1654345027020" duration="2044000" />
       <workItem from="1654347255759" duration="18696000" />
-      <workItem from="1654416580014" duration="20540000" />
+      <workItem from="1654416580014" duration="20576000" />
+      <workItem from="1654588291743" duration="1368000" />
     </task>
     <task id="LOCAL-00001" summary="base">
       <created>1653646506391</created>
@@ -181,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654450090196</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="move_trash">
+      <created>1654450217868</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1654450217868</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,6 +215,9 @@
     <MESSAGE value="base" />
     <MESSAGE value="start_0529" />
     <MESSAGE value="0601 reservation page, ke_dialog prepare" />
+    <MESSAGE value="0601 reservation page to reservation_chosen page with schedule query" />
+    <MESSAGE value="move_trash" />
+    <option name="LAST_COMMIT_MESSAGE" value="move_trash" />
     <option name="LAST_COMMIT_MESSAGE" value="0601 reservation page, ke_dialog prepare" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
